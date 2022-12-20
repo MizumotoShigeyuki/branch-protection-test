@@ -1,4 +1,4 @@
-name: test-base
+name: test
 on:
   pull_request:
     paths:
