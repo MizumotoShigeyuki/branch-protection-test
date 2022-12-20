@@ -1,0 +1,14 @@
+name: test-app
+on:
+  pull_request:
+    paths:
+      - "app/**"
+jobs:
+  test:
+    name: test
+    strategy:
+      matrix:
+        workdir: [
+          "app/",
+        ]
+    uses: ./.github/workflows/reusable-test.yaml
