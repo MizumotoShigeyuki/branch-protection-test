@@ -1,0 +1,8 @@
+name: test-manual
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: test
+    uses: ./.github/workflows/reusable-test.yaml
